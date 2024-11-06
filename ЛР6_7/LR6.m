@@ -2,11 +2,6 @@
 ranks = [1, 2, 3, 4, 5, 6];
 n = length(ranks);
 
-% Данные о двигателях
-power_values = [30, 25, 40, 28, 15, 50];
-torque_values = [40, 20, 45, 30, 12, 30];
-mass_values = [20, 30, 54, 35, 20, 40];
-
 % Матрица парных сравнений для мощности
 matrix_power = [1,   3,   6,  4,  2,   5,  
                1/3,  1,  1/3, 5, 1/2, 1/2, 
@@ -44,9 +39,9 @@ disp('Масса:'); disp(weights_mass);
 final_scores = zeros(n, 1);
 for i = 1 : n
     final_scores(i) = ...
-        power_values(i) * weights_power(i) + ... 
-        torque_values(i) * weights_torque(i) - ... 
-        mass_values(i) * weights_mass(i);
+        weights_power(i) + ... 
+        weights_torque(i) + ... 
+        weights_mass(i);
 end
 
 disp("Оценка каждого двигателя:"); disp(final_scores);
