@@ -69,6 +69,7 @@ weights_price = calculate_weights(matrix_price);
 weights_components = calculate_weights(matrix_components);
 weights_packaging = calculate_weights(matrix_packaging);
 weights_reviews = calculate_weights(matrix_reviews);
+
 disp('Эффективность:'); disp(weights_effectiveness);
 disp('Безопастность:'); disp(weights_safety);
 disp('Доступность:'); disp(weights_price);
@@ -76,6 +77,12 @@ disp('Компоненты:'); disp(weights_components);
 disp('Качество и размер упаковки:'); disp(weights_packaging);
 disp('Отзывы:'); disp(weights_reviews);
 
+
+% Расчет итоговых оценок для каждого из косметических средств на основе
+% различных критериев. Эффективность, безопасность, компоненты, упаковка, отзывы:
+% Эти критерии положительно влияют на итоговую оценку поэтому их суммируем, 
+% но цену вычитаем потому что более дорогие средства не всегда лучше по
+% эффективности или качеству, нужно чтобы оно было еще и доступно.
 final_scores = zeros(n, 1); 
 for i = 1:n
     final_scores(i) = weights_effectiveness(i) + ...
@@ -86,14 +93,16 @@ for i = 1:n
                        weights_reviews(i);
 end
 
-[max_score, best] = max(final_scores);
+normalized_final_scores = final_scores / sum(final_scores);
+
+[max_score, best] = max(normalized_final_scores);
 
 % Вывод результата
 fprintf('Оптимальное косметическое средство: %s с весом: %.4f\n', products{best}, max_score);
 
 % Построение графика
 figure;
-bar(final_scores);
+bar(normalized_final_scores);
 xlabel('Косметические средства'); 
 ylabel('Итоговый весс');
 title('Итоговые оценки косметических средств');
