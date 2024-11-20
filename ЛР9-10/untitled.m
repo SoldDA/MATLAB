@@ -11,6 +11,8 @@
 %plot(x, y)
 
 x = 0 : 0.1 : 10;
+mf1 = trimf(x, [3 5 7]);
+mf2 = gaussmf(x, [1 6]);
 x1 = (0 : 0.1 : 10);
 x2 = (2 : 0.1 : 10);
 [X, Y] = meshgrid(x1, x2);
