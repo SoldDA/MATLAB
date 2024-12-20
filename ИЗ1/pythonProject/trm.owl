@@ -1,0 +1,648 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#"
+     xml:base="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность_находится_в_районе -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность_находится_в_районе">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Находится_в_стране -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Находится_в_стране">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечение_находится_в_районе -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечение_находится_в_районе">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район_расположенный_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район_расположенный_в">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Ресторан_находится_в -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Ресторан_находится_в">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Адрес_достопримечательности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Адрес_достопримечательности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Адрес_заведения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Адрес_заведения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Адрес_мероприятия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Адрес_мероприятия">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Валюта -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Валюта">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Географические_особенности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Географические_особенности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Дата_и_время_мероприятия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Дата_и_время_мероприятия">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Климат -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Климат">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Необходимые_документы -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Необходимые_документы">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Официальный_язык -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Официальный_язык">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_достопримечательности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_достопримечательности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_заведения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_заведения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_мероприятия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_мероприятия">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_района -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рейтинг_района">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Средняя_цена_приема_пищи -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Средняя_цена_приема_пищи">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тип_достопримечательности -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тип_достопримечательности">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тип_заведения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тип_заведения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тип_развлечения -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тип_развлечения">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Уровень_инфраструктуры -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Уровень_инфраструктуры">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Цена_входного_билета -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Цена_входного_билета">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Цена_мероприятия -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Цена_мероприятия">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Часовой_пояс -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Часовой_пояс">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Туризм"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Boaz_Roof -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Boaz_Roof">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <Ресторан_находится_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Бешикташ"/>
+        <Адрес_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muallim Naci Cad. No 91. Kuruçeşme/Beşiktaş Istanb Kat:3, Besiktas 34345 Турция</Адрес_заведения>
+        <Рейтинг_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</Рейтинг_заведения>
+        <Средняя_цена_приема_пищи rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3 419 руб - 3 885 руб</Средняя_цена_приема_пищи>
+        <Тип_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ресторан</Тип_заведения>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Le_Delizie_del_Vesuvio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Le_Delizie_del_Vesuvio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <Ресторан_находится_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Пантеон"/>
+        <Адрес_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Via Ezio 21, 00192 Рим Италия</Адрес_заведения>
+        <Рейтинг_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_заведения>
+        <Средняя_цена_приема_пищи rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1500 - 2500 руб</Средняя_цена_приема_пищи>
+        <Тип_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ресторан</Тип_заведения>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Shavi_Lomi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Shavi_Lomi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <Ресторан_находится_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Чугурети"/>
+        <Адрес_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qvlividze St.,30, Тбилиси 0114 Грузия</Адрес_заведения>
+        <Рейтинг_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</Рейтинг_заведения>
+        <Средняя_цена_приема_пищи rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2500 руб</Средняя_цена_приема_пищи>
+        <Тип_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ресторан</Тип_заведения>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Бешикташ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Бешикташ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <Район_расположенный_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Стамбул"/>
+        <Рейтинг_района rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_района>
+        <Уровень_инфраструктуры rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Уровень_инфраструктуры>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Галерея_Боргезе -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Галерея_Боргезе">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <Развлечение_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Пантеон"/>
+        <Адрес_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Лацио, Рим, вилла Боргезе</Адрес_мероприятия>
+        <Дата_и_время_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9:00 - 19:00</Дата_и_время_мероприятия>
+        <Рейтинг_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.3</Рейтинг_мероприятия>
+        <Тип_развлечения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Культурное</Тип_развлечения>
+        <Цена_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">от 17 евро</Цена_мероприятия>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Грузинский_театр_оперы_и_балета_им._Палиашвили -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Грузинский_театр_оперы_и_балета_им._Палиашвили">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <Развлечение_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Чугурети"/>
+        <Адрес_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">просп. Шота Руставели, 25, Тбилиси</Адрес_мероприятия>
+        <Дата_и_время_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9:00 - 19:00</Дата_и_время_мероприятия>
+        <Рейтинг_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.3</Рейтинг_мероприятия>
+        <Тип_развлечения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Культурное</Тип_развлечения>
+        <Цена_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 - 100 лари</Цена_мероприятия>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Грузия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Грузия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <Валюта rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Лари</Валюта>
+        <Необходимые_документы rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Нет</Необходимые_документы>
+        <Официальный_язык rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Грузинский</Официальный_язык>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Дворец_Долмабахче -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Дворец_Долмабахче">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <Достопримечательность_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Бешикташ"/>
+        <Адрес_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Стамбул, Бешикташ, махалле Вишнезаде, улица Долмабахче, 2</Адрес_достопримечательности>
+        <Рейтинг_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_достопримечательности>
+        <Тип_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Историческая</Тип_достопримечательности>
+        <Цена_входного_билета rdf:datatype="http://www.w3.org/2001/XMLSchema#string">450 TL</Цена_входного_билета>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Италия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Италия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <Валюта rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Евро</Валюта>
+        <Необходимые_документы rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Шенгенская виза</Необходимые_документы>
+        <Официальный_язык rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Итальянский</Официальный_язык>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Крепость_Нарикала -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Крепость_Нарикала">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <Достопримечательность_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Чугурети"/>
+        <Адрес_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Тбилиси, район Старый Тбилиси</Адрес_достопримечательности>
+        <Рейтинг_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_достопримечательности>
+        <Тип_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Историческая</Тип_достопримечательности>
+        <Цена_входного_билета rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</Цена_входного_билета>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Магеллан -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Магеллан">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Гастрономические_заведения"/>
+        <Ресторан_находится_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сириус"/>
+        <Адрес_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ул. Урицкого, 18А/2, Сириус 354349 Россия</Адрес_заведения>
+        <Рейтинг_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</Рейтинг_заведения>
+        <Средняя_цена_приема_пищи rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000 - 3500 руб</Средняя_цена_приема_пищи>
+        <Тип_заведения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ресторан</Тип_заведения>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Олимпийский_парк -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Олимпийский_парк">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <Достопримечательность_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сириус"/>
+        <Адрес_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Краснодарский край, Природный орнитологический парк в Имеретинской низменности</Адрес_достопримечательности>
+        <Рейтинг_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.9</Рейтинг_достопримечательности>
+        <Тип_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Историческая</Тип_достопримечательности>
+        <Цена_входного_билета rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</Цена_входного_билета>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Памятник_Пантеон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Памятник_Пантеон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Достопримечательность"/>
+        <Достопримечательность_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Пантеон"/>
+        <Адрес_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ул. Делла Ротонда, 19, Рим</Адрес_достопримечательности>
+        <Рейтинг_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.7</Рейтинг_достопримечательности>
+        <Тип_достопримечательности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Историческая</Тип_достопримечательности>
+        <Цена_входного_билета rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5 евро</Цена_входного_билета>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Пантеон -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Пантеон">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <Район_расположенный_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рим"/>
+        <Рейтинг_района rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_района>
+        <Уровень_инфраструктуры rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Уровень_инфраструктуры>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рим -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Рим">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <Находится_в_стране rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Италия"/>
+        <Климат rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Субтропический средиземноморский</Климат>
+        <Часовой_пояс rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTC + 1</Часовой_пояс>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Россия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Россия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <Валюта rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Рубль</Валюта>
+        <Необходимые_документы rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Нет</Необходимые_документы>
+        <Официальный_язык rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Русский</Официальный_язык>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сириус -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сириус">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <Район_расположенный_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сочи"/>
+        <Рейтинг_района rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_района>
+        <Уровень_инфраструктуры rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</Уровень_инфраструктуры>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сочи -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сочи">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <Находится_в_стране rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Россия"/>
+        <Географические_особенности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Берег моря</Географические_особенности>
+        <Климат rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Субтропический, с тёплой дождливой зимой и влажным, но солнечным летом</Климат>
+        <Часовой_пояс rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTC + 3</Часовой_пояс>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сочи_парк -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сочи_парк">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <Развлечение_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Сириус"/>
+        <Адрес_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Посёлок городского типа Сириус, Тематический парк Сочи-Парк</Адрес_мероприятия>
+        <Дата_и_время_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10:00 - 22:00</Дата_и_время_мероприятия>
+        <Рейтинг_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_мероприятия>
+        <Тип_развлечения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Активное</Тип_развлечения>
+        <Цена_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1500 руб</Цена_мероприятия>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Стамбул -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Стамбул">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <Находится_в_стране rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Турция"/>
+        <Географические_особенности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Берег моря</Географические_особенности>
+        <Климат rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Переходный умеренный океанический климат</Климат>
+        <Часовой_пояс rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTC + 3</Часовой_пояс>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Стамбульский_археологический_музей -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Стамбульский_археологический_музей">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Развлечения"/>
+        <Развлечение_находится_в_районе rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Бешикташ"/>
+        <Адрес_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Стамбул, Фатих, махалле Джанкуртаран, улица Осман Хамдибей Йокушу, 1/2</Адрес_мероприятия>
+        <Дата_и_время_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9:00 - 18:00</Дата_и_время_мероприятия>
+        <Рейтинг_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4.4</Рейтинг_мероприятия>
+        <Тип_развлечения rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Культурное</Тип_развлечения>
+        <Цена_мероприятия rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200 TL</Цена_мероприятия>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тбилиси -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тбилиси">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Город"/>
+        <Находится_в_стране rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Грузия"/>
+        <Географические_особенности rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Горы</Географические_особенности>
+        <Климат rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Влажный субтропический с продолжительным жарким летом, короткой тёплой весной и мягкой, но относительно сухой зимой</Климат>
+        <Часовой_пояс rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UTC + 4</Часовой_пояс>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Турция -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Турция">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Страна"/>
+        <Валюта rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Турецкая лира</Валюта>
+        <Необходимые_документы>Нет</Необходимые_документы>
+        <Официальный_язык rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Турецкий</Официальный_язык>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Чугурети -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Чугурети">
+        <rdf:type rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Район"/>
+        <Район_расположенный_в rdf:resource="http://www.semanticweb.org/strel/ontologies/2024/11/untitled-ontology-17#Тбилиси"/>
+        <Рейтинг_района rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Рейтинг_района>
+        <Уровень_инфраструктуры rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</Уровень_инфраструктуры>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
